@@ -282,7 +282,7 @@ android.applicationVariants.all { variant ->
             buildConfigField 'String', 'SENTRY_TOKEN', '"' + token + '"'
         } catch (FileNotFoundException ignored) {}
     } else {
-        buildConfigField 'boolean', 'CRASH_REPORTING', 'false'
+        buildConfigField 'boolean', 'CRASH_REPORTING', 'true'
     }
 
     if (!isDebug) {
